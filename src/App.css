@@ -14,8 +14,10 @@ body {
 
 .app {
     color: #333;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .form {
@@ -84,7 +86,7 @@ body {
 /* Error */
 .error-container {
     height: 350px;
-    
+
 }
 
 .error-img {
