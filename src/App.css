@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: rgb(15 23 42);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+    color: #333;
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Search */
+.search-container {
+    display: flex;
+    justify-content: space-between;
 }
+
+.search-input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+    flex: 1;
+    color: #000;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    font-size: 30px;
+}
+
+
+/* Weather Info */
+.weather-container {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.weather-name {
+    font-size: 16px;
+}
+
+.weather-img {
+    width: 200px;
+}
+
+.weather-type {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.weather-temp {
+    font-size: 26px;
+    font-weight: 600;
+}
+
