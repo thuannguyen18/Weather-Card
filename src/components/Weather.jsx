@@ -12,7 +12,7 @@ function Weather() {
             <h4 className="weather-name">{info.name}</h4>
             <img className="weather-img" src={weather ? weather.img : ""} alt="type" />
             <p className="weather-type">{info.type}</p>
-            <p className="weather-temp">{info.temp}</p>
+            <p className="weather-temp">{info.temp}℃</p>
         </div>
     );
 }

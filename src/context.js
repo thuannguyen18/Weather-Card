@@ -7,6 +7,8 @@ function AppProvider({ children }) {
     const [loading, setLoading] = useState(false);
     const [info, setInfo] = useState(null);
 
+    const convertTemp = degree => Math.floor((degree - 32) * 5/9);
+
     const fetchWeather = async () => {
         setLoading(true);
         try {
@@ -15,7 +17,8 @@ function AppProvider({ children }) {
             if (data) {
                 const type = data.weather[0].main;
                 const { name, main: { temp } } = data;
-                setInfo({ name, type, temp });
+                
+                setInfo({ name, type, temp: convertTemp(temp) });
             }
         } catch (error) {
             console.log(error);
